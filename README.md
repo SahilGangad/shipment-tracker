@@ -12,7 +12,7 @@ A full-stack shipment tracking application with an append-only audit trail and s
 ## 1. Tech Choices & Why
 
 - **React 19 + Vite + TypeScript (Frontend):** Instant dev startup, high-speed builds, and end-to-end type safety matching our backend models.
-- **Vanilla CSS (Modern Enterprise Light Theme):** Clean, lightweight logistics dashboard aesthetic (slate-50 background, white elevated cards, high-contrast typography, and status badges) without framework bloat.
+- **Vanilla CSS (Warm Editorial Light Theme):** Custom aesthetic inspired by Sahil's portfolio palette (warm oat `#f2eee3` canvas, soft ivory `#fbf9f3` elevated cards, `#181510` ink typography, and signature `#ff3b1f` vermilion accents) with clean, standard typography and zero framework overhead.
 - **Node.js + Express 5 + TypeScript (Backend):** Minimal, fast, and familiar REST API setup with native async error handling.
 - **Prisma ORM:** Strict type safety, clean migrations, and `prisma.$transaction` for atomic status updates.
 - **PostgreSQL (Docker / Hosted):** Reliable relational database with ACID guarantees, foreign keys, and indexes on frequently queried fields (`reference_number`, `current_status`).
