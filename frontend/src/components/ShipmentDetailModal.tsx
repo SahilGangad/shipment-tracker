@@ -125,7 +125,7 @@ export const ShipmentDetailModal: React.FC<Props> = ({
           <div className="modal-title">
             <span>Shipment Timeline</span>
             {shipment && (
-              <span style={{ fontFamily: 'var(--font-mono)', color: '#2563eb' }}>
+              <span style={{ fontFamily: 'var(--font-mono)', color: '#0f172a' }}>
                 {shipment.referenceNumber}
               </span>
             )}

@@ -135,44 +135,44 @@ export function App() {
             <span className="stat-label">Active Records</span>
             <span className="stat-value">{stats.total}</span>
           </div>
-          <div className="stat-icon" style={{ background: '#eaf0e8' }}>
-            <Layers size={20} color="#354f52" />
+          <div className="stat-icon" style={{ background: '#f1f5f9' }}>
+            <Layers size={20} color="#0f172a" />
           </div>
         </div>
 
         <div className="stat-card">
           <div className="stat-info">
             <span className="stat-label">Booked</span>
-            <span className="stat-value" style={{ color: '#354f52' }}>
+            <span className="stat-value" style={{ color: '#1d4ed8' }}>
               {stats.booked}
             </span>
           </div>
-          <div className="stat-icon" style={{ background: '#eef3ec' }}>
-            <Package size={20} color="#354f52" />
+          <div className="stat-icon" style={{ background: '#eff6ff' }}>
+            <Package size={20} color="#1d4ed8" />
           </div>
         </div>
 
         <div className="stat-card">
           <div className="stat-info">
             <span className="stat-label">In Transit</span>
-            <span className="stat-value" style={{ color: '#8c6318' }}>
+            <span className="stat-value" style={{ color: '#b45309' }}>
               {stats.inTransit}
             </span>
           </div>
-          <div className="stat-icon" style={{ background: '#fdf6ea' }}>
-            <Truck size={20} color="#8c6318" />
+          <div className="stat-icon" style={{ background: '#fffbeb' }}>
+            <Truck size={20} color="#b45309" />
           </div>
         </div>
 
         <div className="stat-card">
           <div className="stat-info">
             <span className="stat-label">Delivered</span>
-            <span className="stat-value" style={{ color: '#28634a' }}>
+            <span className="stat-value" style={{ color: '#047857' }}>
               {stats.delivered}
             </span>
           </div>
-          <div className="stat-icon" style={{ background: '#e9f2ee' }}>
-            <CheckCircle2 size={20} color="#28634a" />
+          <div className="stat-icon" style={{ background: '#ecfdf5' }}>
+            <CheckCircle2 size={20} color="#047857" />
           </div>
         </div>
       </div>
@@ -291,7 +291,7 @@ export function App() {
                 </div>
                 <div className="route-connector">
                   <div className="connector-line" />
-                  <ArrowRight size={14} color="#52796f" />
+                  <ArrowRight size={14} color="#2563eb" />
                 </div>
                 <div className="route-endpoint" style={{ textAlign: 'right' }}>
                   <span className="endpoint-label">Destination</span>
