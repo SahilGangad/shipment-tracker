@@ -6,11 +6,8 @@ A full-stack shipment tracking application with an append-only audit trail and s
 
 ## 🚀 Live Demo & Links
 
-- **Frontend:** [https://shipment-tracker-frontend-alpha.vercel.app](https://shipment-tracker-frontend-alpha.vercel.app) *(or your Vercel URL)*
-- **Backend API:** [https://shipment-tracker-api.onrender.com](https://shipment-tracker-api.onrender.com) *(or your Render URL)*
-- **GitHub:** [https://github.com/SahilGangad/shipment-tracker](https://github.com/SahilGangad/shipment-tracker)
-
----
+- **Frontend:** [https://shipment-tracker-by-sahil.vercel.app/](https://shipment-tracker-by-sahil.vercel.app/)
+- **Backend API:** [https://shipment-tracker-at6z.onrender.com](https://shipment-tracker-at6z.onrender.com)
 
 ## 1. Tech Choices & Why
 
