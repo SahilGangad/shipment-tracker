@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ShipmentStatus {
+  BOOKED
+  IN_TRANSIT
+  CUSTOMS_HOLD
+  OUT_FOR_DELIVERY
+  DELIVERED
+  CANCELLED
+}
+
+model Shipment {
+  id                    String          @id @default(uuid())
+  referenceNumber       String          @unique @map("reference_number")
+  origin                String
+  destination           String
+  expectedDeliveryDate  DateTime        @map("expected_delivery_date")
+  currentStatus         ShipmentStatus  @default(BOOKED) @map("current_status")
+  createdAt             DateTime        @default(now()) @map("created_at")
+  updatedAt             DateTime        @updatedAt @map("updated_at")
+
+  history               StatusHistory[]
+
+  @@map("shipments")
+  @@index([currentStatus])
+  @@index([referenceNumber])
+}
+
+model StatusHistory {
+  id          String         @id @default(uuid())
+  shipmentId  String         @map("shipment_id")
+  status      ShipmentStatus
+  changedAt   DateTime       @default(now()) @map("changed_at")
+  note        String?
+  location    String?
+
+  shipment    Shipment       @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+
+  @@map("status_history")
+  @@index([shipmentId])
+  @@index([changedAt])
+}
